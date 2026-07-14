@@ -1,0 +1,10 @@
+{:itonami.blueprint/id "cloud-itonami-isic-8421"
+ :itonami.blueprint/name "Foreign Affairs and Consular Services Administration"
+ :itonami.blueprint/isic-rev5 "8421"
+ :itonami.blueprint/domain :foreign/consular-services
+ :itonami.blueprint/license "AGPL-3.0-or-later"
+ :itonami.blueprint/social-impact [:consular-transparency :diplomatic-record-keeping :visa-process-fairness]
+ :itonami.blueprint/governor :foreign-consular-governor
+ :itonami.blueprint/robotics true
+ :itonami.blueprint/required-technologies [:robotics :identity :forms :dmn :audit-ledger]
+ :itonami.blueprint/status :public-oss}

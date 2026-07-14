@@ -1,0 +1,118 @@
+                    GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU Affero General Public License is a free, copyleft license for
+software and other kinds of works, specifically designed to ensure
+cooperation with the community in the case of network server software.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU Affero General Public License is intended to guarantee your
+freedom to share and change all versions of a program--to make sure it
+remains free software for all its users.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it, that you
+can change the software and use pieces of it in new free programs, and
+that you know you can do these things.
+
+  Developers that use our General Public Licenses protect your rights
+with two steps: (1) assert copyright on the software, and (2) offer
+you this License which gives you legal permission to copy, distribute
+and/or modify it.
+
+  A secondary benefit of defending all users' freedom is that
+improvements made in alternate versions of the program, if they receive
+widespread use, become available for the other developers to
+incorporate.  Many developers of free software are heartened and
+encouraged by the networked cooperation. However, when a server
+program's only significant use is connecting to remote computers, the
+network it serves becomes an integral part of its mechanism.  This is
+why that version of the AGPL requires the network server source to
+remain available to its users.
+
+  Finally, the Web and the client/server paradigm has had tremendous
+impact in the years since the previous GPL version.  To address this
+paradigm, the AGPL adds an additional permission to the GPL regarding
+the distribution of source code over a network server.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU Affero General Public
+License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds
+of works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be other individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or transmitting it through a network, provided that messages
+do not carry any creative works based on the Program.  Propagating a
+covered work means propagating a work based on the Program.
+
+  An "interactive user interface" displays "Appropriate Legal Notices"
+to the extent that it contains a prominent and easily accessible
+feature that that displays an
+
+Appropriate Legal Notice.
+
+  An interactive user interface displays Appropriate Legal Notices to
+the extent that it includes a convenient and prominently visible
+feature that displays an appropriate legal notice.  In particular, when
+the user interface displays a list of source code files, the list must
+include an appropriate legal notice.
+
+  The "Appropriate Legal Notice" for a work based on the Program is as
+follows:
+
+    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+    This program is free software: you can redistribute it and/or
+    modify it under the terms of the GNU Affero General Public License
+    as published by the Free Software Foundation, either version 3 of
+    the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public
+    License along with this program.  If not, see
+    <https://www.gnu.org/licenses/>.
+
+If your software can interact with users remotely through a computer
+network, you should also make sure that it provides a way for users to
+get its source.  For example, if your program is a web application, its
+interface could display a "Source" link that leads users to an archive
+of the code.  There are many ways you could offer source, and different
+solutions will be better for different programs; see section 13 for the
+specific requirements.
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU AGPL, see
+<https://www.gnu.org/licenses/>.
