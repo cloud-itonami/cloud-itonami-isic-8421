@@ -25,7 +25,7 @@
   LLM parse failures always yield `:confidence 0.0` (never fabricate
   confidence), which forces the governor to escalate/hold."
   (:require [clojure.edn :as edn]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 ; Closed allowlist: only these operations are permitted
 (def permitted-ops #{:intake-visa-application
