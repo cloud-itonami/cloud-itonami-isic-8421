@@ -72,15 +72,15 @@ human-in-the-loop interrupt/resume via checkpointing.
                                            +-> :hold               (:hard? true)
 ```
 
-- `src/foreign/store.cljc` — `Store` protocol + `MemStore`:
+- `src/foreign/store.kotoba` — `Store` protocol + `MemStore`:
   registered applicants, committed consular records, an append-only audit ledger.
-- `src/foreign/advisor.cljc` — `Advisor` protocol; `mock-advisor`
+- `src/foreign/advisor.kotoba` — `Advisor` protocol; `mock-advisor`
   (deterministic, default) proposes a consular operation from a
   request; `llm-advisor` wraps a `langchain.model/ChatModel` — either
   way the advisor only ever produces a `:propose`-effect proposal,
   never a committed record, and LLM parse failures always yield
   `confidence 0.0` (forces escalation, never fabricated confidence).
-- `src/foreign/governor.cljc` — `ForeignConsularGovernor/check`: a pure
+- `src/foreign/governor.kotoba` — `ForeignConsularGovernor/check`: a pure
   function, wired as its own `:govern` node. Hard invariants
   (unregistered applicant, a proposal whose `:effect` isn't `:propose`, any
   proposal touching visa decisions/binding statements/policy) always
@@ -89,7 +89,7 @@ human-in-the-loop interrupt/resume via checkpointing.
   `:request-approval` — an `interrupt-before` node that the graph
   checkpoints and only resumes on explicit human approval
   (`actor/approve!`).
-- `src/foreign/actor.cljc` — `build-graph`, `run-request!`,
+- `src/foreign/actor.kotoba` — `build-graph`, `run-request!`,
   `approve!`: the `langgraph.graph/state-graph` wiring itself.
 
 ```bash
