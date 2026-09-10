@@ -140,12 +140,12 @@ Example: if the architect listed forbidden ops as `#{:grant-visa :deny-visa}`, a
 
 Three tiers of tests:
 
-1. **Governor tests** (`test/foreign/governor_test.clj`):
+1. **Governor tests** (`test/foreign/governor_test.kotoba`):
    - Hard violations (unregistered applicant, no-actuation, scope-boundary) always `:hard? true`
    - Escalation invariants (visa intake, security concerns, low confidence) always `:escalate? true`
    - Clean proposals (registered applicant, low-risk op, high confidence) pass through with `:ok? true`
 
-2. **Actor/Graph tests** (`test/foreign/actor_test.clj`):
+2. **Actor/Graph tests** (`test/foreign/actor_test.kotoba`):
    - A clean request commits and records immediately
    - An unregistered-applicant request holds without committing
    - An escalated request (visa intake) interrupts, then commits after `approve!`
