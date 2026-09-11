@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. Clone the repository and set up your Clojure development environment.
-2. Run `clojure -M:test` to confirm tests pass locally.
+2. Run `kbb -M:test` to confirm tests pass locally.
 3. Make your changes and add tests.
 
 ## Testing
@@ -11,7 +11,7 @@
 All changes must include tests. Run:
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
 
 ## Scope Boundaries
