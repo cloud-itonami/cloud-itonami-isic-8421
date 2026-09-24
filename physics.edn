@@ -1,0 +1,35 @@
+;; What this vertical's robot physically does, declared for
+;; kotoba.robotics.process (kotoba-lang/robotics). `kbb -M:physics` runs it.
+;;
+;; README "Robotics premise": a document-handling and verification robot
+;; performs visa application intake and verification, consular service
+;; scheduling and correspondence drafting for a foreign ministry's consular
+;; section (ISIC 8421). Its physical work is passports: moving a batch tray
+;; of applicants' passports from the intake window to the document-reader /
+;; visa-foil station, and carrying the day's processed passports to the
+;; consulate's strongroom.
+;;
+;; Every number without a cited source is marked `estimate` in its :basis.
+;; Replacing an estimate with a sourced value is this bot's growth work.
+{:physics/schema "itonami.physical-ai.spec.v1"
+ :repo "cloud-itonami/cloud-itonami-isic-8421"
+ :cases
+ [{:id :passport-tray-to-reader-station
+   :kind :manipulator
+   :procedure "arm moves a batch tray of applicants' passports from the intake window shelf up to the document-reader and visa-foil station"
+   :params {:l1-m 0.40 :l2-m 0.35 :m1-kg 3.0 :m2-kg 2.0
+            :from [0.45 -0.10] :to [0.25 0.45] :duration-s 1.5 :steps 300}
+   :sweep {:param :payload-kg :values [0.5 1.0 2.0 3.0 4.5]}
+   :quantity :peak-tau1-nm
+   :limit {:max 35.0 :basis "estimate: continuous shoulder torque of a light desktop collaborative arm (~3 kg payload class); one passport is about 40 g, a 50-passport tray with its box about 2.5 kg"}
+   :boundary {:lo 0.1 :hi 15.0}}
+  {:id :processed-passports-to-strongroom
+   :kind :transport
+   :procedure "custody robot carries the day's processed passports in a locked case from the consular hall to the strongroom"
+   :params {:mass-kg 40.0 :payload-kg 6.0 :v-max-mps 1.0 :a-max-mps2 0.5
+            :brake-decel-mps2 0.8 :drive-force-n 80.0 :crr 0.02
+            :cog-height-m 0.50 :support-half-length-m 0.25 :max-time-s 1800.0}
+   :sweep {:param :distance-m :values [15.0 35.0 60.0 90.0 130.0]}
+   :quantity :cycle-time-s
+   :limit {:max 60.0 :basis "estimate: consulate custody rule keeps passports out of a locked room for no more than a minute in transit"}
+   :boundary {:lo 5.0 :hi 300.0}}]}
