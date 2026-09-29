@@ -158,6 +158,6 @@ Three tiers of tests:
 ## References
 
 - ADR-2607011000: itonami Actor Pattern (langgraph StateGraph, Governor, Advisor separation)
-- CLAUDE.md: Actors section (itonami pattern spec)
+- AGENTS.md: Actors section (itonami pattern spec)
 - `cloud-itonami-isic-8422`: Reference implementation (Defence Procurement actor, similar pattern)
 - `cloud-itonami-isic-3510`: Reference implementation (Grid Transmission actor)
